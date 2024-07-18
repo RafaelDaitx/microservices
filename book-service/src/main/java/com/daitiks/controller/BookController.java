@@ -15,6 +15,10 @@ import com.daitiks.proxy.CambioProxy;
 import com.daitiks.repository.BookRepository;
 import com.daitiks.response.Cambio;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Book endpoint")
 @RestController
 @RequestMapping("book-service")
 public class BookController {
@@ -51,6 +55,7 @@ public class BookController {
 //		return new Book(1L, book.get().getAuthor(), book.get().getTitle(), book.get().getLaunchDate(), book.get().getPrice(), book.get().getCurency(), port);
 //	}
 	
+	@Operation(summary = "Find a specific book by your ID.")
 	@GetMapping(value = "/{id}/{currency}")
 	public Optional<Book> findBook(
 			@PathVariable("id") Long id,

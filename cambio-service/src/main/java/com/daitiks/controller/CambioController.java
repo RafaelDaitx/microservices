@@ -14,6 +14,10 @@ import com.daitiks.model.Cambio;
 
 import com.daitiks.repository.CambioRepository;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Cambio Service API")
 @RestController
 @RequestMapping("cambio-service")
 public class CambioController {
@@ -26,6 +30,7 @@ public class CambioController {
 	
 	//   /5/USD/BRL
 	@GetMapping(value = "/{amount}/{from}/{to}")
+	@Operation(summary = "Find and convert a Cambio.")
 	public Cambio getCambio(
 			@PathVariable("amount") BigDecimal amount,
 			@PathVariable("from") String from,
