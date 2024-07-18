@@ -1,0 +1,18 @@
+package com.daitiks.model;
+import java.util.*;
+
+public class Book {
+
+	private Long id;
+	private String author;
+	private Date launchDate;
+	private Double price;
+	private String title;
+	private String curency;
+	private String environment;
+	
+	
+	
+	
+	  
+}

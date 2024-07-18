@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\Rafael\\ProjectsLife\\Microsservicos\\rafael-config-server\\.git;C\:\\Rafael\\ProjectsLife\\Microsservicos\\greeting-service\\.git;
+GitRepositoriesView.GitDirectories.relative=rafael-config-server\\.git;greeting-service\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

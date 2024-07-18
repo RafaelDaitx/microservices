@@ -1,0 +1,5 @@
+package com.daitiks.repository;
+
+public interface BookRepository {
+
+}

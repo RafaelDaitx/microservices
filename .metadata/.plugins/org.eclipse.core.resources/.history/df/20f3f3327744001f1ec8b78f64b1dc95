@@ -1,0 +1,5 @@
+package com.daitiks.filter;
+
+public class LoggingFilter {
+
+}
